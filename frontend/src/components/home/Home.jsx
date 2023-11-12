@@ -6,6 +6,7 @@ import CounterSections from "./counterSection/CounterSection"
 
 import "./style.css"
 import CardItem from '../cardItem/CardItem'
+import LabelCard from '../labelCard/LabelCard'
 
 function Home() {
     return (
@@ -32,9 +33,28 @@ function Home() {
                     </div>
                 </div>
             </div>
+
             <CounterSections />
-            <CardItem />
-            {/* <CardItem /> */}
+
+            <CardItem
+                position={"left"}
+                item1={"OUR PRODUCTS"}
+                item2={"Elevate your space with our modern design"}
+                item3={"We at Vamani are catering our customers with all modern design furniture product for living, dining and bedroom furniture."}
+                item4={"Majorly we have categorized our collection as:"}
+                item6={"Learn More"}
+            />
+
+            <CardItem
+                position={"right"}
+                item1={"FIRM'S APPROACH"}
+                item2={"OUR DESIGNS & QUALITY PRODUCTS WILL BUILD YOUR TRUST"}
+                item3={"Our Contemporary and electic designs blend aesthetics with functional value. Our collections with their uncluttered elegant lines embrace both the mordern as well as traditional looks"}
+                item6={"Get In Touch"}
+            />
+
+            <LabelCard />
+
         </div>
     )
 }

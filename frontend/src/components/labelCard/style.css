@@ -1,0 +1,45 @@
+.labelCardContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 2rem;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    background-color: #00BCD4;
+    flex-direction: column;
+}
+
+.labelCard1 {
+    color: white;
+    border-bottom-color: white;
+}
+
+.labelCard2 {
+    color: black;
+}
+
+.labelCard3 {
+    color: rgb(54, 54, 54);
+}
+
+.labelCard4 {
+    color: white;
+    width: fit-content;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    border: 1px solid white;
+    cursor: pointer;
+
+    background: linear-gradient(to right, white 50%, #FF8C00 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    cursor: pointer;
+    /* border: 1px solid yellow; */
+}
+
+.labelCard4:hover {
+    background-position: left bottom;
+    color: #FF8C00;
+    /* border-color: black; */
+}

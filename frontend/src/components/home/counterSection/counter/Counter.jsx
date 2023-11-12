@@ -37,16 +37,14 @@ function Counter({ value, heading, symb, logo }) {
     const counter = () => {
         const intervalId = setInterval(() => {
             setCount(prevCount => {
-                if (prevCount >= (value - 5)) {
+                if (prevCount >= (value - 1)) {
                     clearInterval(intervalId);
                 }
-                return prevCount + 5;
+                return prevCount + 1;
             });
         }, 1);
     };
 
-    // useEffect(() => {
-    // }, []);
 
     return (
         <div className="counterContainer">

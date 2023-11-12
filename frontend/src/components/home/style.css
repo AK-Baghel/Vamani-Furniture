@@ -1,6 +1,6 @@
 .homeBox1 {
     background: url('https://png.pngtree.com/thumb_back/fh260/png-vector/20200530/ourmid/pngtree-shanghai-modern-architecture-shopping-center-building-png-image_2214281.jpg');
-    height: 100vh;
+    height: 85vh;
     width: 100vw;
     background-position: center;
     background-size: cover;
@@ -47,14 +47,25 @@
 
 .homeBox1Section3Button {
     background-color: rgb(255, 255, 255);
-    color: red;
+    color: white;
     font-weight: 800;
     font-size: 1.3rem;
     padding: 1rem 2rem;
-    border-radius: 15px;
     cursor: pointer;
     border: 1px solid red;
+
+    background: linear-gradient(to right, white 50%, red 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    cursor: pointer;
 }
+
+.homeBox1Section3Button:hover {
+    background-position: left bottom;
+    color: red;
+}
+
 
 .homeBox1Section3Contact {
     display: flex;
@@ -81,7 +92,8 @@
 
 .homeBox1Section3Contact {
     padding: 0.7rem;
-    border-radius: 20px;
+    /* border-radius: 20px; */
+    background-color: rgb(100, 100, 100);
     border: 2px solid white;
 }
 
