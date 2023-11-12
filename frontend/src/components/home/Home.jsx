@@ -5,6 +5,7 @@ import { IoCall } from "react-icons/io5"
 import CounterSections from "./counterSection/CounterSection"
 
 import "./style.css"
+import CardItem from '../cardItem/CardItem'
 
 function Home() {
     return (
@@ -18,7 +19,7 @@ function Home() {
                         Our team understand how important is to “think like our clients” while making all the product related decisions to serve them well.
                     </div>
                     <div className="homeBox1Section3">
-                        <div className="homeBox1Section3Button">ABOUT US</div>
+                        <div className="homeBox1Section3Button ">ABOUT US</div>
                         <div className="homeBox1Section3Contact">
                             <div className="homeBox1Section3ContactLeft">
                                 <IoCall />
@@ -32,6 +33,8 @@ function Home() {
                 </div>
             </div>
             <CounterSections />
+            <CardItem />
+            {/* <CardItem /> */}
         </div>
     )
 }

@@ -1,5 +1,5 @@
 .homeBox1 {
-    background: url('https://c4.wallpaperflare.com/wallpaper/108/140/869/digital-digital-art-artwork-fantasy-art-drawing-hd-wallpaper-preview.jpg');
+    background: url('https://png.pngtree.com/thumb_back/fh260/png-vector/20200530/ourmid/pngtree-shanghai-modern-architecture-shopping-center-building-png-image_2214281.jpg');
     height: 100vh;
     width: 100vw;
     background-position: center;
@@ -12,7 +12,7 @@
 }
 
 .homeBox1Sections {
-    background-color: rgba(0, 0, 0, 0.39);
+    background-color: rgba(0, 0, 0, 0.432);
     color: white;
     display: flex;
     justify-content: center;
@@ -34,7 +34,7 @@
 
 .homeBox1Section2 {
     /* max-width: 50rem; */
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
 }
 
@@ -67,7 +67,8 @@
     font-size: 1.5rem;
     border-radius: 50%;
     padding: 8px 8.5px 4px 8.9px;
-    border: 2px solid white;
+    border: 2px solid rgb(107, 255, 107);
+    color: rgb(107, 255, 107);
 }
 
 .homeBox1Section3ContactRight {
@@ -81,7 +82,15 @@
 .homeBox1Section3Contact {
     padding: 0.7rem;
     border-radius: 20px;
-    border: 1px solid white;
+    border: 2px solid white;
+}
+
+.homeBox1Section3ContactRightText {
+    color: rgb(133, 255, 133);
+}
+
+.homeBox1Section3ContactRightCall {
+    color: rgb(173, 255, 255);
 }
 
 @media (max-width:450px) {
