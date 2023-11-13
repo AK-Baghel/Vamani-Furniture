@@ -1,0 +1,35 @@
+.productsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-block: 2rem;
+    text-align: center;
+    /* padding-inline: 1rem; */
+
+}
+
+.productsText {
+    font-size: 2rem;
+    color: #FF8C00;
+    border-bottom: 1px solid rgb(80, 80, 80);
+}
+
+.productsHeading {
+    font-size: 2.5rem;
+}
+
+.productsImg {
+    width: 80%;
+}
+
+@media(max-width:600px) {
+    .productsHeading {
+        font-size: 1.8rem;
+    }
+
+    .productsContainer {
+        gap: 1rem;
+    }
+}

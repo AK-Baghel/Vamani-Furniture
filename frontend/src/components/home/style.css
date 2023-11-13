@@ -1,5 +1,5 @@
 .homeBox1 {
-    background: url('https://png.pngtree.com/thumb_back/fh260/png-vector/20200530/ourmid/pngtree-shanghai-modern-architecture-shopping-center-building-png-image_2214281.jpg');
+    background: url('https://aarsunwoods.com/wp-content/uploads/2020/02/Wooden-Royal-Bedroom-Furniture-UH-ROYAL-0013.jpg');
     height: 85vh;
     width: 100vw;
     background-position: center;
@@ -12,7 +12,7 @@
 }
 
 .homeBox1Sections {
-    background-color: rgba(0, 0, 0, 0.432);
+    background-color: rgba(0, 0, 0, 0.527);
     color: white;
     display: flex;
     justify-content: center;
@@ -33,7 +33,7 @@
 }
 
 .homeBox1Section2 {
-    /* max-width: 50rem; */
+    max-width: 50rem;
     font-size: 1.2rem;
     text-align: center;
 }

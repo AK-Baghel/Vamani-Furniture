@@ -1,9 +1,11 @@
 import React from 'react'
 import "./style.css"
-// import Photo from "../../assets/photo1.jpg"
-import { AiFillCheckCircle } from "react-icons/ai"
 
-function CardItem({ position, item1, item2, item3, item4, item6, photo }) {
+import { AiFillCheckCircle } from "react-icons/ai"
+import { FaDotCircle } from "react-icons/fa"
+
+
+function CardItem({ position, item1, item2, item3, item4, item6, photo, arr, icon, itemArr }) {
     return (
         <div className={`cardItemContainer ${position === 'right' ? "cardItemContainerOther" : ""}`}>
 
@@ -13,9 +15,40 @@ function CardItem({ position, item1, item2, item3, item4, item6, photo }) {
 
             <div className={`cardItemBox2 ${position === 'right' ? "cardItemBox2Other" : ""}`}>
 
-                <div className="cardItemSection1">{item1}</div>
-                <div className="cardItemSection2">{item2}</div>
-                <div className="cardItemSection3">{item3}</div>
+                {
+                    itemArr ?
+                        itemArr.map((item) => {
+
+                            return (
+                                <>
+                                    <div className="cardItemSection1">{item.item1}</div>
+                                    <div className="cardItemSection3">{item.item2}</div>
+                                    <div className="cardItemSection3">{item.item3}</div>
+                                </>
+                            )
+
+                        }) : ""
+
+                }
+
+
+                {
+                    item1 ?
+                        <div className="cardItemSection1">{item1}</div>
+                        : ""
+                }
+
+                {
+                    item2 ?
+                        <div className="cardItemSection2">{item2}</div>
+                        : ""
+                }
+
+                {
+                    item3 ?
+                        <div className="cardItemSection3">{item3}</div>
+                        : ""
+                }
 
                 {
                     item4 ?
@@ -25,45 +58,38 @@ function CardItem({ position, item1, item2, item3, item4, item6, photo }) {
 
 
                 {
-                    position === 'left' ?
+                    arr ?
                         <>
                             <ul className="cardItemSection5">
 
-                                <li className="cardItemSection5List">
-                                    <AiFillCheckCircle className='cardItemSection5ListIcon' />
-                                    <div className="cardItemSection5ListText">Dining tables (regular and expandable)</div>
-                                </li>
-                                <li className="cardItemSection5List">
-                                    <AiFillCheckCircle className='cardItemSection5ListIcon' />
-                                    <div className="cardItemSection5ListText">Foldable tables</div>
-                                </li>
-                                <li className="cardItemSection5List">
-                                    <AiFillCheckCircle className='cardItemSection5ListIcon' />
-                                    <div className="cardItemSection5ListText">Beds</div>
-                                </li>
-                                <li className="cardItemSection5List">
-                                    <AiFillCheckCircle className='cardItemSection5ListIcon' />
-                                    <div className="cardItemSection5ListText">Side tables</div>
-                                </li>
-                                <li className="cardItemSection5List">
-                                    <AiFillCheckCircle className='cardItemSection5ListIcon' />
-                                    <div className="cardItemSection5ListText">Nested tables</div>
-                                </li>
-                                <li className="cardItemSection5List">
-                                    <AiFillCheckCircle className='cardItemSection5ListIcon' />
-                                    <div className="cardItemSection5ListText">Night tables</div>
-                                </li>
-                                <li className="cardItemSection5List">
-                                    <AiFillCheckCircle className='cardItemSection5ListIcon' />
-                                    <div className="cardItemSection5ListText">Bar stools and chairs</div>
-                                </li>
+                                {
+                                    arr.map((item) => {
+                                        return (
+                                            <li className="cardItemSection5List">
+                                                {
+                                                    icon === true ?
+                                                        <AiFillCheckCircle className='cardItemSection5ListIcon' /> :
+                                                        <FaDotCircle className='cardItemSection5ListIcon' />
+                                                }
+                                                <div className="cardItemSection5ListText">{item}</div>
+                                            </li>
+                                        )
+                                    })
+                                }
+
+
+
 
                             </ul>
                         </>
                         : ""
                 }
 
-                <div className="cardItemSection6">{item6}</div>
+                {
+                    item6 ?
+                        <div className="cardItemSection6">{item6}</div>
+                        : ""
+                }
             </div>
         </div>
     )

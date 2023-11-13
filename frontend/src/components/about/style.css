@@ -1,0 +1,46 @@
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+}
+
+.aboutSections {
+    background: url('https://media.designcafe.com/wp-content/uploads/2020/02/21005331/interior-design-for-hall-for-home.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutSection {
+    /* height: 40vh; */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* padding: 2rem; */
+    width: 100vw;
+    /* height: 100%; */
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    gap: 1.5rem;
+    padding: 4rem;
+}
+
+.aboutSection1 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    max-width: 35rem;
+    text-align: center;
+}
+
+.aboutSection2 {
+    max-width: 30rem;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 1.8rem;
+    letter-spacing: 2px;
+}

@@ -45,10 +45,10 @@ const Header = () => {
 
                     <div className="headerRight">
 
-                        <div className={`headerItem hoverUnderline ${location.pathname === "/" ? "active" : ""}`} onClick={() => { routing("/") }}>Home</div>
-                        <div className={`headerItem hoverUnderline ${location.pathname === "/methods" ? "active" : ""}`} onClick={() => { routing("/methods") }} >About Us</div>
-                        <div className={`headerItem hoverUnderline ${location.pathname === "/dashboard" ? "active" : ""}`} onClick={() => { routing("/dashboard") }} >Products</div>
-                        <div className={`headerItem hoverUnderline ${location.pathname === "/dashboard" ? "active" : ""}`} onClick={() => { routing("/dashboard") }} >Sustainability</div>
+                        <div className={`headerItem hoverUnderline ${location.pathname === "/furniture" ? "active" : ""}`} onClick={() => { routing("/furniture") }}>Home</div>
+                        <div className={`headerItem hoverUnderline ${location.pathname === "/furniture/about" ? "active" : ""}`} onClick={() => { routing("/furniture/about") }} >About Us</div>
+                        <div className={`headerItem hoverUnderline ${location.pathname === "/furniture/products" ? "active" : ""}`} onClick={() => { routing("/furniture/products") }} >Products</div>
+                        <div className={`headerItem hoverUnderline`}> <a className="headerItemLink " href="https://www.canva.com/design/DAFtqRS5M8I/smvGAoc__C5U1OTP02o8RQ/view" target="_blank">Sustainability</a></div>
                         <div className={`headerItem hoverUnderline ${location.pathname === "/dashboard" ? "active" : ""}`} onClick={() => { routing("/dashboard") }} >Grievance Redressal</div>
                         <div className={`headerItem hoverUnderline ${location.pathname === "/dashboard" ? "active" : ""}`} onClick={() => { routing("/dashboard") }} >Contact Us</div>
 

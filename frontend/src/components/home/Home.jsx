@@ -11,6 +11,17 @@ import CardItem from '../cardItem/CardItem'
 import LabelCard from '../labelCard/LabelCard'
 
 function Home() {
+
+    const arr = [
+        "Dining tables (regular and expandable)",
+        "Foldable tables",
+        "Beds",
+        "Side tables",
+        "Nested tables",
+        "Night tables",
+        "Bar stools and chairs",
+    ]
+
     return (
         <div className="homeContainer">
             <div className="homeBox1">
@@ -46,6 +57,8 @@ function Home() {
                 item4={"Majorly we have categorized our collection as:"}
                 item6={"Learn More"}
                 photo={photo1}
+                arr={arr}
+                icon={true}
             />
 
             <CardItem

@@ -3,6 +3,8 @@ import './App.css'
 import Header from './components/header/Header'
 import Home from "./components/home/Home"
 import Footer from './components/footer/Footer'
+import About from './components/about/About'
+import Products from './components/products/Products'
 
 function App() {
 
@@ -10,8 +12,9 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path='/' element={<Home />} />
-        {/* <Route path='/header' element={<Header />} /> */}
+        <Route path='/furniture' element={<Home />} />
+        <Route path='/furniture/about' element={<About />} />
+        <Route path='/furniture/products' element={<Products />} />
       </Routes>
       <Footer />
     </>

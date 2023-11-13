@@ -1,0 +1,22 @@
+.marqueeContainer {
+    margin: 0 auto;
+    width: 80vw;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.marqueeHeading {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.marquee {
+    border-radius: 20px;
+}
+
+.marqueeImg {
+    border-radius: 20px;
+    margin: 10px;
+    width: 66rem;
+    height: 120px;
+}
