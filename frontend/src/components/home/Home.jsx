@@ -3,6 +3,8 @@ import React from 'react'
 import { IoCall } from "react-icons/io5"
 
 import CounterSections from "./counterSection/CounterSection"
+import photo1 from "../../assets/photo1.jpg"
+import photo2 from "../../assets/photo2.jpg"
 
 import "./style.css"
 import CardItem from '../cardItem/CardItem'
@@ -43,6 +45,7 @@ function Home() {
                 item3={"We at Vamani are catering our customers with all modern design furniture product for living, dining and bedroom furniture."}
                 item4={"Majorly we have categorized our collection as:"}
                 item6={"Learn More"}
+                photo={photo1}
             />
 
             <CardItem
@@ -51,6 +54,7 @@ function Home() {
                 item2={"OUR DESIGNS & QUALITY PRODUCTS WILL BUILD YOUR TRUST"}
                 item3={"Our Contemporary and electic designs blend aesthetics with functional value. Our collections with their uncluttered elegant lines embrace both the mordern as well as traditional looks"}
                 item6={"Get In Touch"}
+                photo={photo2}
             />
 
             <LabelCard />

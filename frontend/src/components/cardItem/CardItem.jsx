@@ -1,14 +1,14 @@
 import React from 'react'
 import "./style.css"
-import Photo from "../../assets/photo1.jpg"
+// import Photo from "../../assets/photo1.jpg"
 import { AiFillCheckCircle } from "react-icons/ai"
 
-function CardItem({ position, item1, item2, item3, item4, item6 }) {
+function CardItem({ position, item1, item2, item3, item4, item6, photo }) {
     return (
         <div className={`cardItemContainer ${position === 'right' ? "cardItemContainerOther" : ""}`}>
 
             <div className="cardItemBox1">
-                <img className="cardItemImg" src={Photo} alt="" />
+                <img className="cardItemImg" src={photo} alt="" />
             </div>
 
             <div className={`cardItemBox2 ${position === 'right' ? "cardItemBox2Other" : ""}`}>
