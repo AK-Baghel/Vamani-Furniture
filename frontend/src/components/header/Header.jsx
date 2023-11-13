@@ -49,8 +49,8 @@ const Header = () => {
                         <div className={`headerItem hoverUnderline ${location.pathname === "/about" ? "active" : ""}`} onClick={() => { routing("/about") }} >About Us</div>
                         <div className={`headerItem hoverUnderline ${location.pathname === "/products" ? "active" : ""}`} onClick={() => { routing("/products") }} >Products</div>
                         <div className={`headerItem hoverUnderline`}> <a className="headerItemLink " href="https://www.canva.com/design/DAFtqRS5M8I/smvGAoc__C5U1OTP02o8RQ/view" target="_blank">Sustainability</a></div>
-                        <div className={`headerItem hoverUnderline ${location.pathname === "/dashboard" ? "active" : ""}`} onClick={() => { routing("/dashboard") }} >Grievance Redressal</div>
-                        <div className={`headerItem hoverUnderline ${location.pathname === "/dashboard" ? "active" : ""}`} onClick={() => { routing("/dashboard") }} >Contact Us</div>
+                        <div className={`headerItem hoverUnderline ${location.pathname === "/grievance" ? "active" : ""}`} onClick={() => { routing("/grievance") }} >Grievance Redressal</div>
+                        <div className={`headerItem hoverUnderline ${location.pathname === "/contact" ? "active" : ""}`} onClick={() => { routing("/contact") }} >Contact Us</div>
 
 
                     </div>

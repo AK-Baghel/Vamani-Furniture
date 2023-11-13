@@ -1,7 +1,15 @@
 import React from 'react'
 import "./style.css"
+import { useNavigate } from 'react-router-dom'
 
 function Footer() {
+    const navigate = useNavigate();
+    const scrollPage = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        })
+    }
     return (
         <footer className="footerContainer">
             <div className="footerBox1">
@@ -12,12 +20,12 @@ function Footer() {
                 <div className="footerBox1Section">
                     <div className="footerBox1SectionHeading">Links</div>
                     <div className="footerBox1SectionItems">
-                        <div className="footerBox1SectionItem">Home</div>
-                        <div className="footerBox1SectionItem">About Us</div>
-                        <div className="footerBox1SectionItem">Products</div>
-                        <div className="footerBox1SectionItem">Sustainability</div>
-                        <div className="footerBox1SectionItem">Grievance Redressal</div>
-                        <div className="footerBox1SectionItem">Contact Us</div>
+                        <div className="footerBox1SectionItem" onClick={() => { navigate("/") }} >Home</div>
+                        <div className="footerBox1SectionItem" onClick={() => { navigate("/about"); scrollPage(); }} >About Us</div>
+                        <div className="footerBox1SectionItem" onClick={() => { navigate("/products"); scrollPage(); }} >Products</div>
+                        {/* <div className="footerBox1SectionItem" onClick={() => { navigate("/about") }} >Sustainability</div> */}
+                        <div className="footerBox1SectionItem" onClick={() => { navigate("/grievance"); scrollPage(); }} >Grievance Redressal</div>
+                        <div className="footerBox1SectionItem" onClick={() => { navigate("/contact"); scrollPage(); }} >Contact Us</div>
                     </div>
                 </div>
                 <div className="footerBox1Section">

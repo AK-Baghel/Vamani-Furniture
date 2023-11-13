@@ -1,0 +1,14 @@
+.contactBox1 {
+    padding: 3rem 1rem;
+    margin: 0;
+    font-weight: 900;
+
+    background-color: #F6F6F6;
+}
+
+.contactHeading {
+    color: orange;
+    font-weight: 400;
+    /* color: white; */
+    border-bottom-color: #00BCD4;
+}
