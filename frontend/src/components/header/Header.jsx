@@ -7,46 +7,9 @@ import { IoClose } from "react-icons/io5"
 import { MdGTranslate } from "react-icons/md"
 import { useNavigate } from "react-router-dom"
 import { useLocation } from "react-router-dom"
+import Translate from "../translate/Translate"
 
 const Header = () => {
-
-
-    const googleTranslateElementInit = () => {
-        new window.google.translate.TranslateElement(
-            {
-                pageLanguage: 'en',
-                autoDisplay: false,
-            },
-            'google_translate_element'
-        );
-    };
-
-    useEffect(() => {
-        // Check if the script has already been added
-        if (!document.getElementById('google-translate-script')) {
-            const addScript = document.createElement('script');
-            addScript.id = 'google-translate-script';
-            addScript.src =
-                '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
-            addScript.async = true;
-
-            addScript.onload = () => {
-                // Once the script is loaded, initialize the translation
-                window.googleTranslateElementInit = googleTranslateElementInit;
-                googleTranslateElementInit();
-            };
-
-            document.body.appendChild(addScript);
-            return () => {
-                document.body.removeChild(addScript);
-                delete window.googleTranslateElementInit;
-            };
-        } else {
-            // If the script is already added, just initialize the translation
-            googleTranslateElementInit();
-        }
-    },);
-
 
     const location = useLocation();
     const [show, setShow] = useState(true);
@@ -94,7 +57,7 @@ const Header = () => {
                         <div className="translateBox headerItem " >
                             <MdGTranslate className={`translateIcon`} onClick={() => { setTranslateShow(!translateShow); }} />
                             {
-                                translateShow && <div id="google_translate_element" className="translate" />
+                                translateShow && <Translate />
                             }
                         </div>
 
