@@ -13,6 +13,31 @@ body {
     /* Hide horizontal scrollbar */
 }
 
+.translateBox {
+    position: relative;
+
+}
+
+.translate {
+    position: absolute;
+    /* width: 100%; */
+    top: 2rem;
+    right: 0rem;
+    background-color: white;
+    padding: 5px;
+}
+
+.translateIcon {
+    font-size: 1.7rem;
+    color: black;
+
+    cursor: pointer;
+}
+
+.translateIcon:hover {
+    color: red;
+}
+
 .headerItemLink {
     color: black;
     text-decoration: none;
@@ -36,7 +61,7 @@ body {
 
 
 .headerLogoImg {
-    width: 300px;
+    width: 100%;
 }
 
 .headerItems {
@@ -251,6 +276,25 @@ body {
 
     .headerVerticalToggleActive {
         color: red;
+    }
+
+    .translate {
+        background-color: white;
+        width: 100%;
+        left: 0rem;
+    }
+
+    .translateIcon {
+        width: 10rem;
+        position: relative;
+        right: 4rem;
+        font-size: 1.7rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .translateIcon:hover {
+        color: rgb(114, 11, 114);
     }
 
     .headerAllItem {
