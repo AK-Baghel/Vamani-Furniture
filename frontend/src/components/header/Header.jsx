@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react"
 import "./style.css"
 import { FaBars } from "react-icons/fa6"
-// import { RiArrowDropDownLine } from "react-icons/ri"
 import vamani from "../../assets/vamani.jpg"
 
 import { IoClose } from "react-icons/io5"
@@ -70,7 +69,7 @@ const Header = () => {
         <div className="headerContainer">
             <div className="headerItems" >
 
-                <div className="headerLogo">
+                <div className="headerLogo" onClick={() => { routing("/") }}>
                     <img className="headerLogoImg" src={vamani} alt="" />
                 </div>
 

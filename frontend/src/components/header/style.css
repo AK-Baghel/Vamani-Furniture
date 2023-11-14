@@ -59,9 +59,13 @@ body {
     color: red;
 }
 
+.headerLogo {
+    cursor: pointer;
+}
 
 .headerLogoImg {
     width: 100%;
+
 }
 
 .headerItems {
