@@ -223,6 +223,10 @@ body {
 
 @media (max-width:931px) {
 
+    .headerItemLink {
+        color: white;
+    }
+
     .headerItems {
 
         height: 15vh;

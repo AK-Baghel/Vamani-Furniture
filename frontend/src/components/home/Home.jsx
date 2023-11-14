@@ -10,7 +10,17 @@ import "./style.css"
 import CardItem from '../cardItem/CardItem'
 import LabelCard from '../labelCard/LabelCard'
 
+import { useNavigate } from 'react-router-dom'
+
 function Home() {
+
+    const navigate = useNavigate();
+    const scrollPage = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        })
+    }
 
     const arr = [
         "Dining tables (regular and expandable)",
@@ -33,7 +43,7 @@ function Home() {
                         Our team understand how important is to “think like our clients” while making all the product related decisions to serve them well.
                     </div>
                     <div className="homeBox1Section3">
-                        <div className="homeBox1Section3Button ">ABOUT US</div>
+                        <div className="homeBox1Section3Button " onClick={() => { navigate('/about'); scrollPage(); }}>ABOUT US</div>
                         <div className="homeBox1Section3Contact">
                             <div className="homeBox1Section3ContactLeft">
                                 <IoCall />
@@ -59,6 +69,7 @@ function Home() {
                 photo={photo1}
                 arr={arr}
                 icon={true}
+                route={'products'}
             />
 
             <CardItem
@@ -68,6 +79,7 @@ function Home() {
                 item3={"Our Contemporary and electic designs blend aesthetics with functional value. Our collections with their uncluttered elegant lines embrace both the mordern as well as traditional looks"}
                 item6={"Get In Touch"}
                 photo={photo2}
+                route={'contact'}
             />
 
             <LabelCard />

@@ -20,7 +20,7 @@ function Footer() {
                 <div className="footerBox1Section">
                     <div className="footerBox1SectionHeading">Links</div>
                     <div className="footerBox1SectionItems">
-                        <div className="footerBox1SectionItem" onClick={() => { navigate("/") }} >Home</div>
+                        <div className="footerBox1SectionItem" onClick={() => { navigate("/"); scrollPage(); }} >Home</div>
                         <div className="footerBox1SectionItem" onClick={() => { navigate("/about"); scrollPage(); }} >About Us</div>
                         <div className="footerBox1SectionItem" onClick={() => { navigate("/products"); scrollPage(); }} >Products</div>
                         {/* <div className="footerBox1SectionItem" onClick={() => { navigate("/about") }} >Sustainability</div> */}

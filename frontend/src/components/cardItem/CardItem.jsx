@@ -3,9 +3,21 @@ import "./style.css"
 
 import { AiFillCheckCircle } from "react-icons/ai"
 import { FaDotCircle } from "react-icons/fa"
+import { useNavigate } from 'react-router-dom'
 
 
-function CardItem({ position, item1, item2, item3, item4, item6, photo, arr, icon, itemArr }) {
+function CardItem({ position, item1, item2, item3, item4, item6, photo, arr, icon, itemArr, route }) {
+
+
+
+    const navigate = useNavigate();
+    const scrollPage = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+        })
+    }
+
     return (
         <div className={`cardItemContainer ${position === 'right' ? "cardItemContainerOther" : ""}`}>
 
@@ -63,9 +75,9 @@ function CardItem({ position, item1, item2, item3, item4, item6, photo, arr, ico
                             <ul className="cardItemSection5">
 
                                 {
-                                    arr.map((item) => {
+                                    arr.map((item, index) => {
                                         return (
-                                            <li className="cardItemSection5List">
+                                            <li className="cardItemSection5List" key={index}>
                                                 {
                                                     icon === true ?
                                                         <AiFillCheckCircle className='cardItemSection5ListIcon' /> :
@@ -87,7 +99,7 @@ function CardItem({ position, item1, item2, item3, item4, item6, photo, arr, ico
 
                 {
                     item6 ?
-                        <div className="cardItemSection6">{item6}</div>
+                        <div className="cardItemSection6" onClick={() => { navigate(`/${route}`); scrollPage(); }}>{item6}</div>
                         : ""
                 }
             </div>

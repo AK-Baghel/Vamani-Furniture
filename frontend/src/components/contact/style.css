@@ -12,3 +12,7 @@
     /* color: white; */
     border-bottom-color: #00BCD4;
 }
+
+.contactHover:hover {
+    color: red;
+}
