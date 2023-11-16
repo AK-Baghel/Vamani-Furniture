@@ -4,7 +4,7 @@ import { FaBars } from "react-icons/fa6"
 import vamani from "../../assets/vamani.jpg"
 
 import { IoClose } from "react-icons/io5"
-import { MdGTranslate } from "react-icons/md"
+// import { MdGTranslate } from "react-icons/md"
 import { useNavigate } from "react-router-dom"
 import { useLocation } from "react-router-dom"
 import Translate from "../translate/Translate"
@@ -14,7 +14,7 @@ const Header = () => {
     const location = useLocation();
     const [show, setShow] = useState(true);
     const [popUp, setPopUp] = useState(false);
-    const [translateShow, setTranslateShow] = useState(false)
+    // const [translateShow, setTranslateShow] = useState(false)
 
 
     const toggleBar = () => {
@@ -54,11 +54,12 @@ const Header = () => {
                         <div className={`headerItem hoverUnderline`}> <a className="headerItemLink " href="https://www.canva.com/design/DAFtqRS5M8I/smvGAoc__C5U1OTP02o8RQ/view" target="_blank">Sustainability</a></div>
                         <div className={`headerItem hoverUnderline ${location.pathname === "/grievance" ? "active" : ""}`} onClick={() => { routing("/grievance") }} >Grievance Redressal</div>
                         <div className={`headerItem hoverUnderline ${location.pathname === "/contact" ? "active" : ""}`} onClick={() => { routing("/contact") }} >Contact Us</div>
-                        <div className="translateBox headerItem " >
-                            <MdGTranslate className={`translateIcon`} onClick={() => { setTranslateShow(!translateShow); }} />
+                        <div className=" headerItem " >
+                            <Translate />
+                            {/* <MdGTranslate className={`translateIcon`} onClick={() => { setTranslateShow(!translateShow); }} />
                             {
                                 translateShow && <Translate />
-                            }
+                            } */}
                         </div>
 
 

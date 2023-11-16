@@ -1,0 +1,9 @@
+@media(max-width:880px) {
+    .contactFormContainer {
+        gap: 0rem;
+    }
+
+    .contactFormHeading {
+        font-size: 2.2rem;
+    }
+}

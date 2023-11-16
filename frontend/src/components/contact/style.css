@@ -16,3 +16,26 @@
 .contactHover:hover {
     color: red;
 }
+
+.contactContainerSection3 {
+    /* background-color: #00BCD4; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-block: 1rem;
+}
+
+.contactContainerSection2 {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: orange;
+
+}
+
+@media(max-width:880px) {
+    .contactContainerSection3 {
+        flex-direction: column-reverse;
+    }
+}

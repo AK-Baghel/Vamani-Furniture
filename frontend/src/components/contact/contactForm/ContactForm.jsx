@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import "./style.css"
 function ContactForm() {
 
 
@@ -20,44 +20,44 @@ function ContactForm() {
 
 
     return (
-        <div className="productsContainer">
+        <div className="productsContainer contactFormContainer">
             {/* <div className="productsText grievanceText">Contact Form</div> */}
-            <div className="productsHeading">Contact Form</div>
+            <div className="productsHeading contactFormHeading">Contact Form</div>
             <div className="grievanceForm">
                 <div className="grievanceFormSection1">
-                    <label className='grievanceFormLabel' htmlFor="name">
+                    {/* <label className='grievanceFormLabel' htmlFor="name">
                         Name:
-                    </label>
+                    </label> */}
                     <input type="text" id="name" className="grievanceFormInput" value={name} placeholder='Enter Your Name.' onChange={(e) => { setName(e.target.value) }} />
                 </div>
                 {check && !name && <p className='validation'>It's mandatory to fill Name</p>}
 
                 <div className="grievanceFormSection1">
-                    <label className='grievanceFormLabel' htmlFor="email">
+                    {/* <label className='grievanceFormLabel' htmlFor="email">
                         Email Address:
-                    </label>
+                    </label> */}
                     <input type="text" id="email" className="grievanceFormInput" value={email} placeholder='Enter Your Email Address.' onChange={(e) => { setEmail(e.target.value) }} />
                 </div>
                 {check && !email && <p className='validation'>It's mandatory to fill Aadhar Number</p>}
 
                 <div className="grievanceFormSection1">
-                    <label className='grievanceFormLabel' htmlFor="phoneNo">
+                    {/* <label className='grievanceFormLabel' htmlFor="phoneNo">
                         Phone Number:
-                    </label>
+                    </label> */}
                     <input type="number" id="phoneNo" className="grievanceFormInput" value={phone} placeholder='Enter Your Phone Number.' onChange={(e) => { setPhone(e.target.value) }} />
                 </div>
                 {check && !phone && <p className='validation'>It's mandatory to fill Phone Number</p>}
 
                 <div className="grievanceFormSection1 ">
-                    <label className='grievanceFormLabel' htmlFor="message">
+                    {/* <label className='grievanceFormLabel' htmlFor="message">
                         Message:
-                    </label>
+                    </label> */}
                     <textarea id="message" className="grievanceFormInput textArea" value={message} placeholder='Enter Your Message.' onChange={(e) => { setMessage(e.target.value) }} />
                 </div>
                 {check && !message && <p className='validation'>It's mandatory to fill Message</p>}
 
                 <div className="grievanceFormSection1Right">
-                    <div className="cardItemSection6 " onClick={send}>Send Message</div>
+                    <div className="cardItemSection6 grievanceButton" onClick={send}>Send Message</div>
                 </div>
 
 

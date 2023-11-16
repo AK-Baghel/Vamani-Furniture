@@ -41,9 +41,15 @@ function Contact() {
 
             </div>
 
-            <ContactForm />
+            <div className="contactContainerSection2" />
 
-            <GoogleMap />
+            <div className="contactContainerSection3">
+
+                <GoogleMap />
+                <ContactForm />
+
+            </div>
+
         </div>
     )
 }

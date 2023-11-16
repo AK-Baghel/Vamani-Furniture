@@ -5,6 +5,7 @@ import { IoCall } from "react-icons/io5"
 import CounterSections from "./counterSection/CounterSection"
 import photo1 from "../../assets/photo1.jpg"
 import photo2 from "../../assets/photo2.jpg"
+import video from "../../assets/For-Web1-2.mp4"
 
 import "./style.css"
 import CardItem from '../cardItem/CardItem'
@@ -83,6 +84,11 @@ function Home() {
             />
 
             <LabelCard />
+
+            <div className="homeVideoSection">
+
+                <video className='homeVideo' src={video} controls={true} />
+            </div>
 
         </div>
     )

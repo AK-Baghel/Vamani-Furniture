@@ -13,21 +13,10 @@ body {
     /* Hide horizontal scrollbar */
 }
 
-.translateBox {
-    position: relative;
 
-}
 
-.translate {
-    position: absolute;
-    /* width: 100%; */
-    top: 2rem;
-    right: 0rem;
-    background-color: white;
-    padding: 5px;
-}
 
-.translateIcon {
+/* .translateIcon {
     font-size: 1.7rem;
     color: black;
 
@@ -36,7 +25,7 @@ body {
 
 .translateIcon:hover {
     color: red;
-}
+} */
 
 .headerItemLink {
     color: black;
@@ -282,13 +271,8 @@ body {
         color: red;
     }
 
-    .translate {
-        background-color: white;
-        width: 100%;
-        left: 0rem;
-    }
 
-    .translateIcon {
+    /* .translateIcon {
         width: 10rem;
         position: relative;
         right: 4rem;
@@ -299,7 +283,7 @@ body {
 
     .translateIcon:hover {
         color: rgb(114, 11, 114);
-    }
+    } */
 
     .headerAllItem {
         /* height: 85vh; */
