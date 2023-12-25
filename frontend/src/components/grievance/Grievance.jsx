@@ -19,6 +19,14 @@ function Grievance() {
 
     return (
         <div className="productsContainer grievanceContainer">
+
+            <div className="grievanceSections">
+                <div className="aboutSection">
+                    <div className="aboutSection1">Grievance Redressal</div>
+                    {/* <div className="aboutSection2">Discover the vision and expertise behind our firm</div> */}
+                </div>
+            </div>
+
             <div className="productsText grievanceText">VAMANI OVERSEAS PVT LTD</div>
             <div className="productsHeading">Grievance Redressal</div>
             <div className="grievanceForm">

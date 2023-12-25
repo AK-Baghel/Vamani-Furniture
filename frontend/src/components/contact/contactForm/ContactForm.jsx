@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./style.css"
+
 function ContactForm() {
 
 
@@ -20,9 +20,9 @@ function ContactForm() {
 
 
     return (
-        <div className="productsContainer contactFormContainer">
+        <div className="productsContainer">
             {/* <div className="productsText grievanceText">Contact Form</div> */}
-            <div className="productsHeading contactFormHeading">Contact Form</div>
+            <div className="productsHeading">Contact Form</div>
             <div className="grievanceForm">
                 <div className="grievanceFormSection1">
                     {/* <label className='grievanceFormLabel' htmlFor="name">
@@ -57,7 +57,7 @@ function ContactForm() {
                 {check && !message && <p className='validation'>It's mandatory to fill Message</p>}
 
                 <div className="grievanceFormSection1Right">
-                    <div className="cardItemSection6 grievanceButton" onClick={send}>Send Message</div>
+                    <div className="cardItemSection6 " onClick={send}>Send Message</div>
                 </div>
 
 

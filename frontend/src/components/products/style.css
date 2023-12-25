@@ -1,13 +1,28 @@
 .productsContainer {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     flex-direction: column;
-    gap: 2rem;
-    margin-block: 2rem;
+    gap: 1rem;
+    /* margin-block: 2rem; */
     text-align: center;
     /* padding-inline: 1rem; */
 
+
+    /* display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem; */
+
+}
+
+.productSections {
+    background: url('https://images.alphacoders.com/102/1020460.jpg');
+    background-position: center;
+    background-size: cover;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
 }
 
 .productsText {

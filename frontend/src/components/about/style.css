@@ -9,6 +9,7 @@
     background: url('https://media.designcafe.com/wp-content/uploads/2020/02/21005331/interior-design-for-hall-for-home.jpg');
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;

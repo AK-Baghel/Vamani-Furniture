@@ -1,17 +1,18 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import { IoCall } from "react-icons/io5"
 
 import CounterSections from "./counterSection/CounterSection"
 import photo1 from "../../assets/photo1.jpg"
 import photo2 from "../../assets/photo2.jpg"
-import video from "../../assets/For-Web1-2.mp4"
+// import video from "../../assets/For-Web1-2.mp4"
 
 import "./style.css"
 import CardItem from '../cardItem/CardItem'
 import LabelCard from '../labelCard/LabelCard'
 
 import { useNavigate } from 'react-router-dom'
+import Carousel from '../carousel/Carousel'
 
 function Home() {
 
@@ -33,9 +34,14 @@ function Home() {
         "Bar stools and chairs",
     ]
 
+    const picImages = ["homeBox1", "homeBox1Pic2", "homeBox1Pic3"]
+    const [image, setImage] = useState("homeBox1Pic2");
+
+
     return (
         <div className="homeContainer">
-            <div className="homeBox1">
+            <Carousel />
+            <div className={`homeBox1`}>
                 <div className="homeBox1Sections">
                     <div className="homeBox1Section1">
                         Designers and exporters of the finest contemporary furniture and interior accessories
@@ -85,10 +91,10 @@ function Home() {
 
             <LabelCard />
 
-            <div className="homeVideoSection">
+            {/* <div className="homeVideoSection">
 
-                <video className='homeVideo' src={video} controls={true} />
-            </div>
+                <video className='homeVideo' src={video} controlsList="nodownload" controls={true} autoPlay loop muted />
+            </div> */}
 
         </div>
     )

@@ -15,8 +15,14 @@ import "./style.css"
 function Products() {
     return (
         <div className="productsContainer">
-            <div className="productsText">Our Products</div>
-            <div className="productsHeading">Showcasing the exquisite craftsmanship of firm</div>
+            <div className="aboutSections productSections">
+                <div className="aboutSection">
+                    <div className="aboutSection1">Our Products</div>
+                    <div className="aboutSection2">Showcasing the exquisite craftsmanship of firm</div>
+                </div>
+            </div>
+            {/* <div className="productsText">Our Products</div>
+            <div className="productsHeading">Showcasing the exquisite craftsmanship of firm</div> */}
             <img className='productsImg' src={photo7} alt="" />
             <img className='productsImg' src={photo8} alt="" />
             <img className='productsImg' src={photo9} alt="" />

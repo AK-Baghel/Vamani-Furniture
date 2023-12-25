@@ -6,6 +6,8 @@
     background-color: #F6F6F6;
 }
 
+
+
 .contactHeading {
     color: orange;
     font-weight: 400;
@@ -32,6 +34,17 @@
     height: 2px;
     background-color: orange;
 
+}
+
+.contactText {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.6rem;
+    /* letter-spacing: 1px; */
+}
+
+.contactItems {
+    gap: 0.4rem;
 }
 
 @media(max-width:880px) {
